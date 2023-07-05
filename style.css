@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    position: relative;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-image: repeating-conic-gradient(red 0deg 23deg, rgb(211, 211, 20) 23deg 48deg, rgb(37, 238, 37) 48deg 73deg);
+    transform: translate(-50%, -50%);
+    animation: roatation 3s linear infinite;
+    margin: 100px;
+}
+
+@keyframes roatation {
+    0% {
+        transform: translate(-50%, -50%)rotate(0deg);
+    }
+
+    25% {
+        transform: translate(900px, -50%)rotate(360deg);
+    }
+
+    50% {
+        transform: translate(900px, 300px)rotate(-360deg);
+    }
+
+    75% {
+        transform: translate(-50%, 300px)rotate(270deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%)rotate(360deg);
+    }
+
+
+}
+
+h3 {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    text-align: center;
+}
